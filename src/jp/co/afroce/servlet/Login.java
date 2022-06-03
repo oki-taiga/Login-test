@@ -34,7 +34,7 @@ public class Login extends HttpServlet {
 					request.getRequestDispatcher("../jsp/result.jsp").forward(request, response);
 				} else {
 					request.setAttribute("error", "IDもしくはパスワードが間違っています。");
-					request.getRequestDispatcher("../jsp/result.jsp");
+					
 				}
 
 			} catch (Exception e) {
