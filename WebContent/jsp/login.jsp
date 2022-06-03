@@ -5,5 +5,6 @@
 	<p>ID<input type="text" name="id"></p>
 	<p>PASS WORD<input type="password" name="pass"></p>
 	<input type="submit" value="ログイン">
+	<p style="color:red">${error }<p>
 </form>
 <%@include file="../footer.html" %>

@@ -33,8 +33,9 @@ public class Login extends HttpServlet {
 					request.setAttribute("Bean", b);
 					request.getRequestDispatcher("../jsp/result.jsp").forward(request, response);
 				} else {
-					request.setAttribute("error", "IDもしくはパスワードが間違っています。");
-					
+					request.setAttribute("error", "IDまたはパスワードが誤っています。");
+					request.setAttribute("id", id);
+					request.getRequestDispatcher("/jsp/login.jsp").forward(request, response);
 				}
 
 			} catch (Exception e) {
